@@ -55,4 +55,34 @@
     border: 5px solid cornflowerblue;
     background-color: red;
     opacity: 50%;
+
+}
+
+form {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+label {
+    width: 100px solid red;
+    margin-top: 5px;
+}
+
+button, label {
+    display: block;
+    padding-bottom: 5px;
+}
+
+button, input {
+    width: 20%;
+    text-align: center;
+}
+
+button {
+    
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
 }
