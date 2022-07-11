@@ -6,7 +6,8 @@
     border: 1px solid black;
 }
 
-#abs1, #abs2{
+#abs1,
+#abs2 {
     border: 1px solid red;
     position: absolute;
     width: 100px;
@@ -43,4 +44,15 @@
     float: right;
 }
 
-#middle { clear: left;}
+#middle {
+    clear: left;
+}
+
+#opacity {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 5px solid cornflowerblue;
+    background-color: red;
+    opacity: 50%;
+}
