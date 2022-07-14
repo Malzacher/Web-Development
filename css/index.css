@@ -97,6 +97,14 @@ a {
     margin: 5px;
 }
 
-[href="hhtps://nickmalzacher.com"]:hover{
+[href="hhtps://nickmalzacher.com"]:hover {
     color: red;
+}
+
+p.child:first-child {
+    background-color: red;
+}
+
+p.child:last-child {
+    background-color: orange;
 }
