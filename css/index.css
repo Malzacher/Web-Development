@@ -88,3 +88,15 @@ button {
     display: inline-block;
     text-align: center;
 }
+
+[type="text"] {
+    border: 1px solid red;
+}
+
+a {
+    margin: 5px;
+}
+
+[href="hhtps://nickmalzacher.com"]:hover{
+    color: red;
+}
