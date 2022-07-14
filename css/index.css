@@ -107,4 +107,9 @@ p.child:first-child {
 
 p.child:last-child {
     background-color: orange;
+} 
+
+#focus:focus {
+    border: 5px solid red;
+    background-color: blue;
 }
