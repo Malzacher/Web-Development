@@ -150,3 +150,7 @@ p.child:last-child {
     background-color: blue;
     color: rgba(0, 0, 0, .2);
 }
+
+#hsl {
+    background-color: hsl(180, 20%, 50%);
+}
