@@ -145,3 +145,8 @@ p.child:last-child {
     background-color: #ccc;
     background-image: url(../images/cool.jpg);
 }
+
+#rgba {
+    background-color: blue;
+    color: rgba(0, 0, 0, .2);
+}
