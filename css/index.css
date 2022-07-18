@@ -131,3 +131,17 @@ p.child:last-child {
     background-position: center center;
     background-image: url('/images/cool.jpg');
 }
+
+#bgimg {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 5px solid green;
+
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: #ccc;
+    background-image: url(../images/cool.jpg);
+}
