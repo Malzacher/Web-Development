@@ -107,7 +107,7 @@ p.child:first-child {
 
 p.child:last-child {
     background-color: orange;
-} 
+}
 
 #focus:focus {
     border: 5px solid red;
@@ -153,4 +153,9 @@ p.child:last-child {
 
 #hsl {
     background-color: hsl(180, 20%, 50%);
+}
+
+#shadow {
+    text-shadow: 5px 5px 0 grey;
+    font-size: 50px;
 }
