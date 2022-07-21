@@ -160,3 +160,11 @@ p.child:last-child {
     text-align: center;
     font-size: 50px;
 }
+
+#box {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: auto;
+}
