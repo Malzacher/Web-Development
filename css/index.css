@@ -177,7 +177,7 @@ p.child:last-child {
     display: block;
 }
 
-#card-container{
+#card-container {
     display: inline-block;
     width: 225px;
     height: 270px;
@@ -206,4 +206,20 @@ p.child:last-child {
 
 #card-container:hover #card-title {
     text-decoration: underline;
+}
+
+#clip {
+    width: 250px;
+    height: 50px;
+    text-overflow: clip;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#elip {
+    width: 250px;
+    height: 60px;
+    text-overflow: ellipsis;
+    border: 1px solid black;
+    overflow: hidden;
 }
