@@ -156,6 +156,7 @@ p.child:last-child {
 }
 
 #shadow {
-    text-shadow: 5px 5px 0 grey;
+    text-shadow: -5px 5px 10px blue;
+    text-align: center;
     font-size: 50px;
 }
