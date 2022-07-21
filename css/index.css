@@ -171,3 +171,39 @@ p.child:last-child {
 
     box-shadow: 5px 5px 2px black;
 }
+
+#card-image {
+    width: 225px;
+    display: block;
+}
+
+#card-container{
+    display: inline-block;
+    width: 225px;
+    height: 270px;
+    border: 1px solid rgb(225, 225, 225);
+    padding: 5px;
+    font-family: roboto;
+    background-color: rgb(232, 232, 232);
+    text-decoration: none;
+    color: black;
+}
+
+#card-title {
+    font-weight: 700;
+    margin: 10px 0px;
+    font-family: poppins;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+#card-text {
+    font-size: 14px;
+}
+
+#card-container:hover {
+    box-shadow: 5px 5px 3px grey;
+}
+
+#card-container:hover #card-title {
+    text-decoration: underline;
+}
