@@ -198,6 +198,7 @@ p.child:last-child {
 
 #card-text {
     font-size: 14px;
+    color: rgb(36, 36, 36);
 }
 
 #card-container:hover {
