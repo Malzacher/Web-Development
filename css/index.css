@@ -207,6 +207,7 @@ p.child:last-child {
 
 #card-container:hover #card-title {
     text-decoration: underline;
+    color: rgb(15, 15, 15);
 }
 
 #clip {
