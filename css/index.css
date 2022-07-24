@@ -16,7 +16,17 @@
     z-index: 0;
 }
 
+
 #abs2 {
+    border: 1px solid red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    z-index: 0;
+}
+
+#abs3 {
     top: 50px;
     left: 50px;
     background-color: aqua;
