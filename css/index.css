@@ -235,3 +235,16 @@ p.child:last-child {
     border: 1px solid black;
     overflow: hidden;
 }
+
+.trans {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    transition: 500ms;
+}
+
+.trans:hover {
+    width: 100px;
+    height: 100px;
+}
