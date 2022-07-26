@@ -248,3 +248,15 @@ p.child:last-child {
     width: 100px;
     height: 100px;
 }
+
+#colortrans {
+    text-decoration: none;
+    color: black;
+    transition-duration: 300ms;
+    transition-property: color;
+    transition-timing-function: linear;
+}
+
+#colortrans:hover {
+    color: green;
+}
