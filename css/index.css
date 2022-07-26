@@ -279,6 +279,7 @@ p.child:last-child {
     transition-duration: 1000ms;
     transition-property: left calc(100% - 50px);
     transition-timing-function: ease;
+    transition-delay: 1s;
 }
 
 .parent:hover .child {
