@@ -260,3 +260,27 @@ p.child:last-child {
 #colortrans:hover {
     color: green;
 }
+
+.parent {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.child {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    background-color: #ccc;
+    transition-duration: 1000ms;
+    transition-property: left calc(100% - 50px);
+    transition-timing-function: ease;
+}
+
+.parent:hover .child {
+    left: calc(100% - 50px);
+}
