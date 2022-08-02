@@ -323,19 +323,10 @@ p.child:last-child {
 
 .flex-parent {
     display: flex;
-    flex: 1 1 33%;
     background-color: antiquewhite;
     border: 1px solid red;
 }
 
-.flex1 {
-    flex: 1 1 50%;
-}
-
-.flex2 {
-    flex: 1 1 25%;
-}
-
-.flex3 {
-    flex: 0 0 25%;
+.flex1, .flex2, .flex3 {
+    flex: 1 1 33%;
 }
