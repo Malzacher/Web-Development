@@ -330,3 +330,7 @@ p.child:last-child {
 .flex1, .flex2, .flex3 {
     flex: 1 1 33%;
 }
+
+.flex3 {
+    order: -1;
+}
