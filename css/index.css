@@ -336,3 +336,27 @@ p.child:last-child {
 .flex3 {
     order: -1;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    border: 1px solid red;
+    background-color: aliceblue;
+}
+
+.col1 {
+    flex-basis: 33%;
+}
+
+.col2 {
+    flex-basis: 50%;
+}
+
+.col3 {
+    flex-basis: 75%;
+}
+
+
