@@ -377,3 +377,16 @@ p.child:last-child {
     flex-grow: 0;
     flex-shrink: 0;
 }
+
+.box-flex {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    justify-content:  center;
+
+}
