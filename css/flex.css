@@ -42,7 +42,34 @@ nav {
     padding: ;
 }
 
-.left-column, .right-column, .center-column {
-    flex: 1 0 33%;
+.left-column, .center-column, .right-column {
+    text-align: center;
+}
+
+.left-column {
+    flex: 1 1 25%;
+    border: 1px solid red;
+}
+
+.center-column {
+    flex: 1 1 50%;
+    border: 1px solid red;
+}
+
+.right-column {
+flex: 1 1 25%;
+border: 1px solid red;
+}
+
+footer {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px 20px;
+    justify-content: center;
+    height: 50px;
+}
+
+footer div {
+    flex-basis: 25%;
     border: 1px solid red;
 }
