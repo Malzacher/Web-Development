@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
     margin: 0;
     padding: 0;
     font-family: roboto;
     overflow: hidden;
 }
-nav { 
+
+nav {
     display: flex;
     background-color: lightgray;
     width: 100%;
@@ -39,12 +46,15 @@ nav {
     display: flex;
     width: 100%;
     height: 400px;
-    border: 1px solid red;
-    padding: ;
+
 }
 
-.left-column, .center-column, .right-column {
+.left-column,
+.center-column,
+.right-column {
     text-align: center;
+    padding: 0px 20px;
+    flex: 1 1 33%;
 }
 
 .left-column {
@@ -58,19 +68,44 @@ nav {
 }
 
 .right-column {
-flex: 1 1 25%;
-border: 1px solid red;
+    flex: 1 1 25%;
+    border: 1px solid red;
 }
 
 footer {
     display: flex;
     background-color: lightgray;
     padding: 10px 20px;
-    justify-content: center;
     height: 50px;
+    align-self: flex-end;
 }
 
 footer div {
     flex-basis: 25%;
     border: 1px solid red;
+}
+
+@media (max-width: 700px) {
+
+    footer, .body-container {
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        flex-basis: 48%;
+        margin-bottom: 10px;
+    }
+
+    body {
+        flex-wrap: wrap;
+    }
+
+    .left-column,
+    .center-column,
+    .right-column {
+        flex-basis: 100%;
+        flex-shrink: 0;
+        flex-direction: row;
+    }
+
 }
