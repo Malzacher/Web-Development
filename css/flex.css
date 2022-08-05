@@ -54,7 +54,7 @@ nav {
 .right-column {
     text-align: center;
     padding: 0px 20px;
-    flex: 1 1 33%;
+    flex: 0 0 33%;
     border: 0.5px solid grey;
 }
 
@@ -87,6 +87,11 @@ footer {
 
 footer div {
     flex-basis: 25%;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 700px) {
