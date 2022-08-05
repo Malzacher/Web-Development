@@ -55,26 +55,24 @@ nav {
     text-align: center;
     padding: 0px 20px;
     flex: 1 1 33%;
+    border: 0.5px solid grey;
 }
 
 .left-column {
     flex: 1 1 25%;
-    border: 1px solid red;
 }
 
 .center-column {
     flex: 1 1 50%;
-    border: 1px solid red;
 }
 
 .right-column {
     flex: 1 1 25%;
-    border: 1px solid red;
 }
 
 footer {
     display: flex;
-    background-color: lightgray;
+    background-color: gray;
     padding: 10px 20px;
     height: 50px;
     align-self: flex-end;
@@ -82,7 +80,6 @@ footer {
 
 footer div {
     flex-basis: 25%;
-    border: 1px solid red;
 }
 
 @media (max-width: 700px) {
@@ -107,9 +104,22 @@ footer div {
     .left-column,
     .center-column,
     .right-column {
+ 
         flex-basis: 100%;
         flex-shrink: 0;
         flex-direction: row;
+    }
+
+    .left-column {
+        order: 2;
+    }
+
+    .center-column {
+        order: 1;
+    }
+
+    .right-column {
+         order: 3;
     }
 
 }
@@ -123,6 +133,11 @@ footer div {
     footer div {
         flex-basis: 100%;
         margin-bottom: 10px;
+        text-align: center;
     }
 
+    .left-column a {
+        display: block;
+        border: 1px solid red;
+    }
 }
