@@ -113,3 +113,16 @@ footer div {
     }
 
 }
+
+@media (max-width: 425px) {
+
+    footer {
+        height: 140px;
+    }
+
+    footer div {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+}
