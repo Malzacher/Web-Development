@@ -96,7 +96,10 @@ img {
 
 @media (max-width: 700px) {
 
-
+    img {
+        width: 30%;
+        height: auto;
+    }
 
     .adv {
         width: 200px;
@@ -165,5 +168,15 @@ img {
         color: black;
     }
 
+    .left-column {
+        order: 2;
+    }
 
+    .center-column {
+        order: 1;
+    }
+
+    .right-column {
+        order: 3;
+    }
 }
