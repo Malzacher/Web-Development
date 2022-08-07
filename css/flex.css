@@ -167,16 +167,4 @@ img {
         text-decoration: none;
         color: black;
     }
-
-    .left-column {
-        order: 2;
-    }
-
-    .center-column {
-        order: 1;
-    }
-
-    .right-column {
-        order: 3;
-    }
 }
