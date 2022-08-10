@@ -1,8 +1,12 @@
 * {
-    font-family: 'Spot Mono Bold', Courier, monospace;
+    
     background-color: #BD3229;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-family: 'Spot Mono Bold', Courier, monospace;
 }
 
 .nav-container {
@@ -45,8 +49,13 @@
 .left-container {
     flex: 1 1 40%;
     height: 100%;
+    align-self: center;
 }
 
-.right-mid-container {
+.right-container {
     flex: 1 1 60%;
+    font-family: 'Spot Mono Regular';
+    font-size: 16px;
+    align-self: center;
+    padding: 5px;
 }
