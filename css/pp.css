@@ -7,7 +7,7 @@
 
 .nav-container {
     display: flex;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     border-bottom: 2px solid #1D1D1D;
     font-size: 16px;
     color: #1D1D1D;
@@ -29,5 +29,16 @@
 
 #home, #contact, #resume {
     padding: 10px
+}
+
+.main-container {
+    display: flex;
+    height: 600px;
+    background-color: #1D1D1D;
+
+}
+
+#left-container {
+
 }
 
