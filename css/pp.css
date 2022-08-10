@@ -1,5 +1,5 @@
 * {
-    
+    color: #1D1D1D;
     background-color: #BD3229;
     padding: 0;
     margin: 0;
@@ -12,13 +12,14 @@ body {
 .nav-container {
     display: flex;
     margin: 10px;
-    border-bottom: 2px solid #1D1D1D;
+    border-bottom: 1px solid #1D1D1D;
     font-size: 16px;
     color: #1D1D1D;
     border-radius: 2px;
 }
 
 #home {
+    margin-left: 50px;
     flex: 1 1 90%;
 }
 
@@ -29,7 +30,7 @@ body {
 
 #resume {
     flex: 1 1 5%;
-    align-self: start;
+    margin-right: 50px;
 }
 
 #home,
@@ -41,15 +42,15 @@ body {
 .main-container {
     display: flex;
     height: 600px;
-    border: 1px solid;
-    margin: px;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .left-container {
     flex: 1 1 40%;
-    height: 100%;
-    align-self: center;
+    align-content: center; 
+    margin-left: 50px;
 }
 
 .right-container {
@@ -57,5 +58,14 @@ body {
     font-family: 'Spot Mono Regular';
     font-size: 16px;
     align-self: center;
+    margin-right: 50px;
     padding: 5px;
+}
+
+.left-container h1 {
+    font-size: 50px;
+}
+
+.left-container h2 {
+    font-size: 15px;
 }
