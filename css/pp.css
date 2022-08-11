@@ -81,7 +81,7 @@ body {
     flex: 0 1 33%;
     background-color: #1D1D1D;
     padding: 50px;
-    display: flex;
+
     border: 1px solid white;
     display: inline-block;
 }
