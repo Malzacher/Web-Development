@@ -94,13 +94,13 @@ body {
 }
 
 .title h1 {
-    margin-left: 50px;
     background-color: #1D1D1D;
     display: block;
     color: #BD3229;
-    padding-top: 50px;
+    margin-left: 50px;
 }
 
 .title {
     background-color: #1D1D1D;
+    padding-top: 50px;
 }
