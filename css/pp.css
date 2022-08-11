@@ -49,7 +49,7 @@ body {
 
 .left-container {
     flex: 1 1 40%;
-    align-content: center; 
+    align-content: center;
     margin-left: 50px;
 }
 
@@ -72,17 +72,17 @@ body {
 
 .work-container {
     height: 500px;
-    border: 1px solid black;
     background-color: #1D1D1D;
     display: flex;
     align-self: center;
 }
 
-#work-left, #work-center, #work-right {
+#work-left,
+#work-center,
+#work-right {
     flex: 0 1 33%;
     background-color: #1D1D1D;
-    padding: 50px;
-    border: 1px solid white;
+    margin: 50px;
     display: inline-block;
     align-self: center;
 }
@@ -91,6 +91,16 @@ body {
     background-color: aliceblue;
     height: 100px;
     width: 100%;
-    border: 1px solid white;
 }
 
+.title h1 {
+    margin-left: 50px;
+    background-color: #1D1D1D;
+    display: block;
+    color: #BD3229;
+    padding-top: 50px;
+}
+
+.title {
+    background-color: #1D1D1D;
+}
