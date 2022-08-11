@@ -78,16 +78,19 @@ body {
 }
 
 #work-left, #work-center, #work-right {
-    flex: 1 1 33%;
+    flex: 0 1 33%;
     background-color: #1D1D1D;
     padding: 50px;
     display: flex;
+    border: 1px solid white;
+    display: inline-block;
+    
 }
 
 #work-left h1{
     background-color: transparent;
     color: #BD3229;
-
+    
 }
 
 .box-left {
@@ -95,4 +98,8 @@ body {
     height: 100px;
     width: 100%;
     border: 1px solid white;
+}
+
+.work-container .box-left, .box-center, .box-right {
+    align-self: center;
 }
