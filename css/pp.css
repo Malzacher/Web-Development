@@ -82,15 +82,17 @@ body {
 #work-right {
     flex: 0 1 33%;
     background-color: #1D1D1D;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: inline-block;
-    align-self: center;
+    align-self: center; 
 }
 
-.box-left {
+.box-left, .box-center, .box-right {
     background-color: aliceblue;
     height: 100px;
-    width: 100%;
+    border-radius: 20px;
+    
 }
 
 .title h1 {
