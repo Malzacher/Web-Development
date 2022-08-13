@@ -89,7 +89,7 @@ body {
 }
 
 .box-left, .box-center, .box-right {
-    background-color: aliceblue;
+    background-color: #E9E9E9 ;
     height: 200px;
     border-radius: 20px;
     
@@ -107,8 +107,14 @@ body {
     padding-top: 50px;
 }
 
-.work-container p {
+.work-container p, .work-container h1 {
+    margin-top: 10px;
     color:#BD3229;
     background-color: #1D1D1D;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Spot Mono Regular', Courier, monospace;;
+}
+
+.work-container h1 {
+    color: #E9E9E9 ;
 }
