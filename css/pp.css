@@ -118,3 +118,13 @@ body {
 .work-container h1 {
     color: #E9E9E9 ;
 }
+
+.title-container {
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+.title-left, .title-center, .title-right {
+    flex: 1 1 33%;
+}
