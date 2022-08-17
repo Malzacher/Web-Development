@@ -142,11 +142,13 @@ body {
 .skills-container {
     display: flex;
     height: 500px;
-    padding: 10px;
+    width: 100%;
     align-items: center;
+    border: 1px solid white;
 }
 
 .skill-left, .skill-center, .skill-right {
-    display: flex;
     flex-basis: 1 1 33%;
+    border: 1px solid white;
+    width: 100%;
 }
