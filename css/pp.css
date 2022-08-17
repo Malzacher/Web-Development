@@ -140,7 +140,7 @@ body {
 }
 
 .skills-container {
-    height: 370px;
+    height: 200px;
     display: flex;
     flex-wrap: wrap
 }
@@ -153,8 +153,8 @@ body {
     flex: 0 1 calc(33% - 100px);
     margin-left: 50px;
     margin-right: 50px;
-    align-self: center;
-}
+
+    }
 
 p {
     display: inline-block;
@@ -162,4 +162,22 @@ p {
 
 .fa-brands {
     font-size: 30px;
+}
+
+.title2 {
+    background-color: #BD3229;
+    padding-top: 50px;
+}
+
+.title2 h1 {
+    display: block;
+    color: #1D1D1D;
+    margin-left: 50px;
+}
+
+.skill-1,
+.skill-2,
+.skill-3 {
+margin-bottom: 0;
+    border-bottom: 2px solid #1D1D1D;
 }
