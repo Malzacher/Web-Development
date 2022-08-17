@@ -140,15 +140,17 @@ body {
 }
 
 .skills-container {
+    height: 370px;
     display: flex;
-    height: 500px;
-    width: 100%;
-    align-items: center;
-    border: 1px solid white;
+    flex-wrap: wrap
 }
 
-.skill-left, .skill-center, .skill-right {
-    flex-basis: 1 1 33%;
-    border: 1px solid white;
-    width: 100%;
+.skill-1,
+.skill-2,
+.skill-3,
+.skill-4,
+.skill-5 {
+    flex: 0 1 calc(33% - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
 }
