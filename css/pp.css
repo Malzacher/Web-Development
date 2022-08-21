@@ -184,3 +184,6 @@ p {
     border-bottom: 2px solid #1D1D1D;
 }
 
+.right-container p {
+    gap: 50px;
+}
