@@ -37,6 +37,7 @@ body {
 #contact,
 #resume {
     padding: 10px 0px;
+    text-decoration: none;
 }
 
 .main-container {
@@ -156,7 +157,7 @@ body {
     justify-content: center;
     align-self: center;
 
-    }
+}
 
 p {
     display: inline-block;
@@ -189,33 +190,36 @@ p {
     background-color: #1D1D1D;
     border-bottom: 1px solid #1D1D1D;
     font-size: 16px;
-    color:#BD3229;
-    height: 50px;
-    
+    color: #BD3229;
+    height: 75px;
 }
 
 #git {
     margin-left: 50px;
-    flex: 1 1 90%;
+    flex: 1 1 5%;
 }
 
 #linkdin {
-    flex: 1 1 5%;
+    flex: 1 1 10%;
     margin-right: 10px;
 }
 
 #f-contact {
-    flex: 1 1 5%;
+    flex: 1 1 90%;
     margin-right: 50px;
+    text-align: right;
 }
 
-#git, #linkdin, #f-contact {
-    align-self:  center;
+#git,
+#linkdin,
+#f-contact {
+    align-self: center;
     background-color: #1D1D1D;
     color: #BD3229;
 }
 
-.fa-github, .fa-linkedin {
+.fa-github,
+.fa-linkedin {
     background-color: #1D1D1D;
     color: #BD3229;
 }
