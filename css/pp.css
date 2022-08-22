@@ -113,6 +113,13 @@ body {
     background-position: top;
 }
 
+.box-right {
+    background-image: url(/images/Screen\ Shot\ 2022-08-22\ at\ 7.22.57\ pm.png);
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 .box-left,
 .box-center,
 .box-right {
