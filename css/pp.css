@@ -103,6 +103,13 @@ body {
     background-color: #E9E9E9;
     height: 200px;
     border-radius: 20px;
+    transition-duration: 750ms;
+}
+
+.box-left,
+.box-center,
+.box-right {
+box-shadow: #1D1D1D;
 }
 
 .title h1 {
@@ -148,7 +155,7 @@ body {
 }
 
 .skills-container {
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -161,9 +168,6 @@ body {
     flex: 0 1 calc(33% - 100px);
     margin-left: 50px;
     margin-right: 50px;
-    justify-content: center;
-    align-self: center;
-
 }
 
 p {
@@ -215,6 +219,7 @@ p {
     flex: 1 1 90%;
     margin-right: 50px;
     text-align: right;
+    text-decoration: none;
 }
 
 #git,
@@ -223,10 +228,18 @@ p {
     align-self: center;
     background-color: #1D1D1D;
     color: #BD3229;
+    transition-duration: 750ms;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+#f-contact:hover {
+    color: #E9E9E9;
 }
 
 .fa-github,
 .fa-linkedin {
     background-color: #1D1D1D;
     color: #BD3229;
+    transition-duration: 750ms;
 }
