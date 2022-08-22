@@ -101,10 +101,16 @@ body {
 .box-center,
 .box-right {
     margin-top: 20px;
-    background-color: #E9E9E9;
     height: 200px;
     border-radius: 20px;
     transition-duration: 750ms;
+}
+
+.box-left {
+    background-image: url(/images/Personal\ Profile.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .box-left,
@@ -271,47 +277,19 @@ p {
         margin-right: 20px;
     }
 
+    .work-container {
+        flex-wrap: wrap;
+        height: 900px;
+    }
+
     #work-left,
     #work-center,
-    #work-right,
-    .title-left,
-    .title-center,
-    .title-right {
-        flex: 1 1 100%;
-
-        flex-wrap: wrap;
+    #work-right {
+        flex-basis: 100%;
     }
 
-    .box-left,
-    .box-center,
-    .box-right {
-        margin-top: 20px;
-        background-color: #E9E9E9;
-        height: 200px;
-        border-radius: 20px;
-        transition-duration: 750ms;
+    .box-left {
+        height: 300px;
     }
-
-    .box-left,
-    .box-center,
-    .box-right {
-        box-shadow: #1D1D1D;
-    }
-
-
-    .title {
-        background-color: #1D1D1D;
-        padding-top: 50px;
-    }
-
-    .work-container p,
-    .work-container h1 {
-        margin-top: 10px;
-        color: #BD3229;
-        background-color: #1D1D1D;
-        font-size: 14px;
-        font-family: 'Spot Mono Regular', Courier, monospace;
-    }
-
 
 }
