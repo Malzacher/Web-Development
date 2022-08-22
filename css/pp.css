@@ -50,7 +50,6 @@ body {
 .main-container {
     display: flex;
     height: 500px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -104,7 +103,7 @@ body {
     height: 200px;
     border-radius: 20px;
     transition-duration: 750ms;
-    border: 5px solid #E9E9E9;
+    border: 3px solid #E9E9E9;
 }
 
 .box-left {
@@ -121,12 +120,24 @@ body {
     background-position: top;
 }
 
-
+.box-center {
+    background-color: #E9E9E9;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 
 .box-left,
 .box-center,
 .box-right {
     box-shadow: #1D1D1D;
+    transition-duration: 750ms;
+}
+
+.box-left:hover,
+.box-center:hover,
+.box-right:hover {
+    box-shadow: 3px 3px #E9E9E9;
 }
 
 .title h1 {
@@ -191,7 +202,8 @@ p {
     display: inline-block;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
     font-size: 30px;
 }
 
@@ -270,13 +282,14 @@ p {
 
     .left-container {
         flex: 1 1 100%;
-        padding-bottom: 10px;
+        margin-bottom: 10px;
         margin-right: 50px;
     }
 
     .right-container {
         flex: 1 1 100%;
         margin-left: 50px;
+        padding: 0;
     }
 
     .work-container {
@@ -289,7 +302,7 @@ p {
 
     .work-container {
         flex-wrap: wrap;
-        height: 900px;
+        height: 1250px;
     }
 
     #work-left,
@@ -298,8 +311,58 @@ p {
         flex-basis: 100%;
     }
 
-    .box-left {
+    .box-left,
+    .box-center,
+    .box-right {
         height: 300px;
     }
 
+    .skill-1,
+    .skill-2,
+    .skill-3,
+    .skill-4,
+    .skill-5 {
+        display: block;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+       
+    }
+
+    .skill-1 {
+        order: 2;
+        display: inline-block;
+    }
+
+    .skill-2 {
+        order: 1;
+    }
+
+    .skill-3 {
+        order: 5;
+    }
+
+    .skill-4 {
+        order: 4;
+    }
+
+    .skill-5 {
+        order: 3;
+    }
+
+    .skills-container p {
+        text-align: right;
+        float: right;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .main-container {
+        height: 500px;
+    }
+
+    .skills-container {
+        height: 300px;
+    }
 }
