@@ -243,3 +243,5 @@ p {
     color: #BD3229;
     transition-duration: 750ms;
 }
+
+@media (max-width: 700px) {
