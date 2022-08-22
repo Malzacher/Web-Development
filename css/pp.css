@@ -38,6 +38,13 @@ body {
 #resume {
     padding: 10px 0px;
     text-decoration: none;
+    transition-duration: 750ms;
+}
+
+#home:hover,
+#contact:hover,
+#resume:hover {
+    color: #E9E9E9;
 }
 
 .main-container {
