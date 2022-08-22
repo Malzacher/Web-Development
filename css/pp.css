@@ -178,8 +178,44 @@ p {
     margin-bottom: 30px;
 }
 
-.skill-1,
+/* .skill-1,
 .skill-2,
 .skill-3 {
     border-bottom: 2px solid #1D1D1D;
+} */
+
+.footer-container {
+    display: flex;
+    background-color: #1D1D1D;
+    border-bottom: 1px solid #1D1D1D;
+    font-size: 16px;
+    color:#BD3229;
+    height: 50px;
+    
+}
+
+#git {
+    margin-left: 50px;
+    flex: 1 1 90%;
+}
+
+#linkdin {
+    flex: 1 1 5%;
+    margin-right: 10px;
+}
+
+#f-contact {
+    flex: 1 1 5%;
+    margin-right: 50px;
+}
+
+#git, #linkdin, #f-contact {
+    align-self:  center;
+    background-color: #1D1D1D;
+    color: #BD3229;
+}
+
+.fa-github, .fa-linkedin {
+    background-color: #1D1D1D;
+    color: #BD3229;
 }
