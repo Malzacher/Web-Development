@@ -28,9 +28,12 @@
         var sentence = sentenceNode.innerText
 
         var sentenceUpperCase = sentence.toUpperCase();
-        car sentenceLowerCase = sentence.toLowerCase();
+        var sentenceLowerCase = sentence.toLowerCase();
 
-        console.log("Sentence:", sentenceUpperCase)
+        var wordArray = sentence.split(" ");
+        var bracket = wordArray.join(")(")
+
+        console.log("(" + bracket + ")");
     </script>
 
 </body>
