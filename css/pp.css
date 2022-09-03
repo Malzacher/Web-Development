@@ -16,6 +16,7 @@ body {
     font-size: 16px;
     color: #1D1D1D;
     border-radius: 2px;
+    gap: 1rem;
 }
 
 #home {
@@ -25,7 +26,6 @@ body {
 
 #contact {
     flex: 1 1 5%;
-    margin-right: 15px;
 }
 
 #resume {
