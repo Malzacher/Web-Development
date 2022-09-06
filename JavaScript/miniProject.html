@@ -16,6 +16,10 @@
         consequatur temporibus reprehenderit non eaque, reiciendis quis corrupti repellendus. Ducimus, quibusdam.
         Mollitia numquam itaque alias blanditiis praesentium!</H1>
 
+        <br>
+        <h3>Your name is: <span id="name">_____</span></h3>
+
+
     <script>
         var cat1 = "Nicholas";
         var cat2 = "Bridget";
@@ -36,7 +40,14 @@
         console.log("(" + bracket + ")");
 
         sentenceNode.innerText = bracket;
-        
+
+        var name = prompt("What is your name?");
+        console.log("Your name is", name);
+
+        var h3Node = document.getElementById("name") 
+        h3Node.innerText = name;
+
+        name.innerText = name
     </script>
 
 </body>
