@@ -14,7 +14,7 @@
 </body>
 
 <script>
-    var meal = prompt("what was the price of your meal ?");
+    /* var meal = prompt("what was the price of your meal ?");
     meal = Number(meal);
     var mealNode = document.getElementById("meal");
     var tipNode = document.getElementById("tip");
@@ -22,9 +22,14 @@
     var tip = (meal / 100) * 15;
 
     mealNode.innerHTML = meal;
-    tipNode.innerHTML = tip;
+    tipNode.innerHTML = tip; */
 
+    function tip(totalAmount, tip = 10) {
+        tip = tip / 100;
+        var tipAmount = totalAmount * tip;
 
+        return tipAmount
+    }
 </script>
 
 </html>
