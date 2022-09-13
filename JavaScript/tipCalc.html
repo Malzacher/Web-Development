@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is a trip calculator</h1>
+    <h3>the price of your meal is <span id="meal"></span> your tip amount should be <span id="tip"></span></h3>
+</body>
+
+<script>
+    var meal = prompt("what was the price of your meal ?");
+    meal = Number(meal);
+    var mealNode = document.getElementById("meal");
+    var tipNode = document.getElementById("tip");
+
+    var tip = (meal / 100) * 15;
+
+    mealNode.innerHTML = meal;
+    tipNode.innerHTML = tip;
+
+
+</script>
+
+</html>
