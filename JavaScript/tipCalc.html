@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <h1>this is a trip calculator</h1>
-    <h3>the price of your meal is <span id="meal"></span> your tip amount should be <span id="tip"></span></h3>
+    <h1>this is a tip calculator</h1>
+    <h3>use console !</h3>
 </body>
 
 <script>
@@ -26,10 +26,18 @@
 
     function tip(totalAmount, tip = 10) {
         tip = tip / 100;
+        console.log("tip as a percentage is: " + tip);
         var tipAmount = totalAmount * tip;
+        console.log("The tip amount for this meal should be: " + tipAmount);
+        totalAmount = totalAmount + tipAmount;
+        console.log("The total bill should tally to: " + totalAmount);
 
         return tipAmount
     }
+
+    var totalBill = tip(25, 10);
+    console.log(totalBill)
+
 </script>
 
 </html>
