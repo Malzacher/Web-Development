@@ -10,6 +10,8 @@
 
 <body>
 
+    <h1 id="title"></h1>
+
     <script>
         function maths(num) {
 
@@ -29,7 +31,14 @@
         var calc = maths(num = 13263645483920);
         var neg = maths(num = "Nick");
 
-        console.log(calc)
+        function $(id) {
+            console.log("the ID is:", id)
+            return document.getElementById(id)
+        }
+
+        var title = $("title");
+        title.innerText = "Custom InnerText";
+       
     </script>
 
 </body>
