@@ -16,6 +16,15 @@
         <small>also to be changed</small>
     </h1>
 
+    <ul>
+        <li> Change </li>
+        <li> Change </li>
+        <li> Change </li>
+        <li> Change </li>
+        <li> Change </li>
+        <li> Change </li>
+    </ul>
+
 
     <script>
         //     let query = document.querySelector(".class")
@@ -24,7 +33,11 @@
         let query = document.querySelector(".class");
         let small = query.querySelector("small");
         small.innerText = "Changing elements"
-        
+
+        let lis = document.querySelectorAll("li");
+        lis[0].innerText = "done";
+        lis[5].innerHTML = "<a href='#'>Changing to a link</a>"
+
     </script>
 
 </body>
