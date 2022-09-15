@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" class="form-control" >
+    <br>
+    <button class="btn btn-primary" onclick="calcluate()"></button>
+
+    <h1>Your total is: <span id="total">N/A</span></h1>
+    <script>
+
+        let num = 100;
+
+        function calcluate() {
+            let input = document.querySelector(".form-control");
+            let value = Number(input.value);
+            let totalValue = value + num;
+
+            let h1Node = document.getElementById("total");
+            h1Node.innerHTML = totalValue
+
+            return totalValue
+        }
+
+    </script>
+</body>
+</html>
