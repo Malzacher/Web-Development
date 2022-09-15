@@ -25,6 +25,7 @@
         <li> Change </li>
     </ul>
 
+    <input type="text" class="hello" value="Hello">
 
     <script>
         //     let query = document.querySelector(".class")
@@ -37,6 +38,9 @@
         let lis = document.querySelectorAll("li");
         lis[0].innerText = "done";
         lis[5].innerHTML = "<a href='#'>Changing to a link</a>"
+
+        let select = document.querySelector(".hello");
+        console.log(select.value);
 
     </script>
 
