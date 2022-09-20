@@ -19,11 +19,12 @@
         var totalClicks = 0;
         var btnNode = document.getElementById("button");
 
-        btnNode.addEventListener('click', function(event) {
-            console.log("button")
+        function addClicks(event) {
             totalClicks = totalClicks + 1;
             displayNode = document.getElementById("displayTotal").innerText = totalClicks;
-        })
+        }
+
+        btnNode.addEventListener('click', addClicks);
     </script>
 
 </body>
