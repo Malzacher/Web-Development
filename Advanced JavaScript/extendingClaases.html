@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Animal {
+            constructor(species, weight, height) {
+                this.species = String(species);
+                this.weight = Number(weight);
+                this.height = Number(height);
+            }
+            getData() {
+                console.log("The " + this.species + " weights " + this.weight + "kg's and is " + this.height + "cm tall!");
+            }
+        }
+
+        class Cat extends Animal {
+            constructor(species, weight, height) {
+                super(species, weight, height);
+
+                this.color = "Black"
+            }
+            sleep() {
+                console.log(this.species + " sleeps for 12h a day");
+            }
+        }
+
+        const nick = new Cat("Cat", 6, 20);
+        console.log(nick);
+        nick.getData();
+
+        nick.sleep();
+
+        //const tiger = new Animal("Tiger", 250, 225);
+        //tiger.getData();
+
+    </script>
+
+</body>
+
+</html>
