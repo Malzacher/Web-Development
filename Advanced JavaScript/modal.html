@@ -31,22 +31,25 @@
             omnis. Non modi quae reprehenderit ipsam labore laboriosam quos. Maiores, cum esse non eos temporibus magnam
             nulla amet. Minima, maiores ea. Consequatur repellendus beatae dignissimos laborum. Est rerum exercitationem
             suscipit earum, accusantium laboriosam ex?</p>
+        <button class="js-close">Close Modal</button>
     </div>
 
     <button class="js-open-modal">Open Modal!</button>
-
-
+    
     <script>
 
-        const openBtn = document.querySelector(".js-open-modal");
         const modal = document.querySelector(".js-modal");
+        
+        const openBtn = document.querySelector(".js-open-modal");
+        const closeBtn = document.querySelector(".js-close")
+
         openBtn.addEventListener('click', function (event) {
             modal.style.display = 'initial';
         })
 
-
-
-
+        closeBtn.addEventListener('click', function (event) {
+            modal.style.display = 'none';
+        })
 
     </script>
 
