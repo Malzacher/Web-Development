@@ -38,8 +38,9 @@
     
     <script>
 
+        const name = "nick";
         const modal = document.querySelector(".js-modal");
-        
+
         const openBtn = document.querySelector(".js-open-modal");
         const closeBtn = document.querySelector(".js-close")
 
@@ -50,6 +51,8 @@
         closeBtn.addEventListener('click', function (event) {
             modal.style.display = 'none';
         })
+
+        console.log(`my name is ${name}`);
 
     </script>
 
