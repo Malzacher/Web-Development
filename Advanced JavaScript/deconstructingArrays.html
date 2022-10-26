@@ -17,6 +17,14 @@
         console.log(firstName);
         console.log(lastName);
 
+        console.log("this is the first timeout!")
+        setTimeout(function(){
+            console.log("this is the second timeout!")
+            const body = document.querySelector("body")
+            body.style.backgroundColor = "red";
+            body.style.color = "orange";
+        }, 3000)
+
     </script>
     
 </body>
