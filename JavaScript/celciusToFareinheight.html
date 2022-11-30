@@ -14,25 +14,25 @@
     <br>
     <label for="">Enter celcius temp</label>
     <input type="text" id="temp">
-    <button id="buttonNode">Submit</button>
+    <button id="button">Submit</button>
+    <h3>The Farenheight Temperture is <span id="final"></span> !</h3>
 
 </body>
 
 <script>
 
-    var buttonNode = document.getElementById("buttonNode");
-    var cTemp = document.getElementById("temp").value;
+    var btnNode = document.getElementById("button");
 
-    function fTemp(event) {
+    function fTemp() {
+
         // calculation from C to F
+        var cTemp = document.getElementById("temp").value;
         var fTemp = (cTemp * 1.8) + 32;
-        console.log(fTemp);
-        console.log("hello");
-        return fTemp
+        // pasting the Temp in
+        var tempNode = document.getElementById("final").innerText = fTemp;
     }
 
-    buttonNode.addEventListener('onclick', fTemp);
-
+    btnNode.addEventListener('click', fTemp);
 
 </script>
 
