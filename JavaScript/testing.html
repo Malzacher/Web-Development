@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Celcius to farenheight conversion!</h1>
+    <br>
+    <label for="">Enter celcius temp</label>
+    <input type="text" id="temp">
+    <button id="buttonNode">Submit</button>
+
+</body>
+
+<script>
+
+    var buttonNode = document.getElementById("buttonNode");
+    var cTemp = document.getElementById("temp").value;
+
+    function fTemp(event) {
+        // calculation from C to F
+        var fTemp = (cTemp * 1.8) + 32;
+        console.log(fTemp);
+        console.log("hello");
+        return fTemp
+    }
+
+    buttonNode.addEventListener('onclick', fTemp);
+
+
+</script>
+
+</html>
