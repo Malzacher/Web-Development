@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h1>tip calculator</h1>
+
+    <form action="">
+
+        <label for="">What is the price of the food?</label>
+        <input type="text" id="price">
+        <button id="submit"></button>
+
+        <h3>Your total should be: <span id="total"></span></h3>
+
+    </form>
+
+</body>
+
+read the price in the text field
+do calculations if its a number else return false
+display to screen -->
+
+    <script>
+
+        function tipCalculator(price) {
+            price = Number(price)
+            if (price) {
+                tipAmount = 0.15 * price;
+                totalAmount = price + tipAmount
+                console.log("Your total was $" + price + ", including tip the final is $" + totalAmount)
+                return tipAmount;
+            } else {
+                return false;
+            }
+        }
+
+        var tip = tipCalculator(15);
+        console.log(tip);
+
+        var tip = tipCalculator(100);
+        console.log(tip);
+
+        var tip = tipCalculator(111111111);
+        console.log(tip);
+
+        var tip = tipCalculator("Nick");
+        console.log(tip);
+
+    </script>
+
+</html>
