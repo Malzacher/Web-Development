@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function maths(num) {
+            num = Number(num);
+            // If the bellow is a number then do maths, else return false
+            if (num) {
+                var newNumber = (num * 32) - 123;
+                return newNumber;
+            } else {
+                return false;
+            }
+        }
+
+        var newNumber = maths(12);
+        console.log(newNumber);
+
+        var newNumber = maths(5122);
+        console.log(newNumber);
+
+    </script>
+
+</body>
+
+</html>
