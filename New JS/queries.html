@@ -12,11 +12,28 @@
         <small>Change me, too</small>
     </h1>
 
+    <ul>
+        <li>Number 1</li>
+        <li>Number 2</li>
+        <li>Number 3</li>
+        <li>Number 4</li>
+        <li>Number 5</li>
+        <li>Number 6</li>
+        <li>Number 7</li>
+        <a href="#">Welcome</a>
+    </ul>
+
     <a href="">This is a link</a>
     
 </body>
 
 <script>
+    var a = document.querySelector("a");
+    a.innerText = "Link changed";
+
+    let linkNode = document.querySelectorAll("li");
+    linkNode[1].innerText = "hello there";
+    linkNode[5].innerHTML = "<a href='#'>Changing to a link</a>"
 
     var titleNode = document.querySelector(".title");
     titleNode.innerText = "Changed title!";
@@ -24,7 +41,5 @@
     var smallNode = titleNode.querySelector("small");
     smallNode.innerText = "This Worked";
 
-    var a = document.querySelector('a');
-    a.innerText = "Link changed";
 </script>
 </html>
