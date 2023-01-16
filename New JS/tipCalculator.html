@@ -11,7 +11,7 @@
 <body>
 
     <h1>tip calculator</h1>
-<!-- 
+    <!-- 
     <form action="">
 
         <label for="">What is the price of the food?</label>
@@ -26,34 +26,34 @@
 
 <!-- read the price in the text field
 do calculations if its a number else return false
-display to screen --> 
+display to screen -->
 
-    <script>
+<script>
 
-        function tipCalculator(price) {
-            price = Number(price)
-            if (price) {
-                tipAmount = 0.15 * price;
-                totalAmount = price + tipAmount
-                console.log("Your total was $" + price + ", including tip the final is $" + totalAmount)
-                return tipAmount;
-            } else {
-                return false;
-            }
+    function tipCalculator(price) {
+        price = Number(price)
+        if (price) {
+            tipAmount = 0.15 * price;
+            totalAmount = price + tipAmount
+            console.log("Your total was $" + price + ", including tip the final is $" + totalAmount)
+            return tipAmount;
+        } else {
+            return false;
         }
+    }
 
-        var tip = tipCalculator(15);
-        console.log(tip);
+    var tip = tipCalculator(15);
+    console.log(tip);
 
-        var tip = tipCalculator(100);
-        console.log(tip);
+    var tip = tipCalculator(100);
+    console.log(tip);
 
-        var tip = tipCalculator(111111111);
-        console.log(tip);
+    var tip = tipCalculator(111111111);
+    console.log(tip);
 
-        var tip = tipCalculator("Nick");
-        console.log(tip);
+    var tip = tipCalculator("Nick");
+    console.log(tip);
 
-    </script>
+</script>
 
 </html>
