@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">Background Colour:</label>
+    <input type="text" class="bg-color">
+    <br>
+
+    <label for="">Text Colour:</label>
+    <input type="text" class="text-color">
+    <br>
+
+    <label for="">Text Size:</label>
+    <input type="text" class="text-size">
+
+</body>
+
+<script>
+    var bgColor = document.querySelector(".bg-color");
+    var textColor = document.querySelector(".text-color");
+    var textSize = document.querySelector(".text-size");
+
+    var body = document.querySelector("body");
+
+    bgColor.addEventListener('keyup', function (e) {
+        body.style.backgroundColor = event.target.value
+    })
+
+    textColor.addEventListener('keyup', function (e) {
+        body.style.color = event.target.value
+    })
+
+    textSize.addEventListener('keyup', function (e) {
+        body.style.fontSize = event.target.value + "px"
+    })
+
+</script>
+
+</html>
