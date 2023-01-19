@@ -13,6 +13,11 @@
 <body>
     <button class="btn btn-primary btn-lg js-button">Click me!</button>
     <h1 class="totalClicks"></h1>
+
+    <br>
+
+    <input type="text" class="form-control js-name">
+    <h1>Hello <span class="name">!</span></h1>
 </body>
 
 <script>
@@ -26,6 +31,16 @@
     function clicks(e) {
         totalClicks++;
         document.querySelector(".totalClicks").innerText = totalClicks;
+    }
+
+    // creating node for obtaining whats written in the input field and then for name change
+    var nameNode = document.querySelector(".js-name");
+    var nameChange = document.querySelector(".name");
+    nameNode.addEventListener('keyup', callbackName)
+
+    //changing the h1, to what is written in the input field using 'keyup' function
+    function callbackName(e) {
+        nameChange.innerText = event.target.value
     }
 
 </script>
