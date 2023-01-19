@@ -23,7 +23,7 @@
     // setting a global variable so the number does not get reset verything the function is initilised
     totalClicks = 0;
 
-    function clicks() {
+    function clicks(e) {
         totalClicks++;
         document.querySelector(".totalClicks").innerText = totalClicks;
     }
