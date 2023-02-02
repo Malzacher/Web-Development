@@ -21,6 +21,13 @@
         return name.toLowerCase() + "@gmail.com"
     }
 
+    //write this function using forEach
+
+    names.forEach(function (name, index) {
+        names[index] = toEmailAddress(name)
+        console.log(index, name)
+    })
+
     for (i = 0; i < names.length; i++) {
         names[i] = toEmailAddress(names[i]);
         console.log(i, names[i])
