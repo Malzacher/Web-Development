@@ -16,7 +16,12 @@
 
     var names = ["Nick", "Bridget", "James", "Jack", "Leon"]
 
+    function toEmailAddress(name) {
+        return name.toLowerCase() + "@gmail.com"
+    }
+
     for (i = 0; i < names.length; i++) {
+        names[i] = toEmailAddress(names[i]);
         console.log(names[i])
     }
 </script>
