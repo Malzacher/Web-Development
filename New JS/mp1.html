@@ -25,6 +25,9 @@
     <label for="">Padding Size:</label>
     <input type="text" class="padding-size">
 
+    <label for="">Margin Size</label>
+    <input type="text" class="margin-size">
+
 </body>
 
 <script>
@@ -34,6 +37,7 @@
     var textColor = document.querySelector(".text-color");
     var textSize = document.querySelector(".text-size");
     var paddingSize = document.querySelector(".padding-size");
+    var marginSize = document.querySelector(".margin-size");
 
     var body = document.querySelector("body");
 
@@ -51,6 +55,10 @@
 
     paddingSize.addEventListener('keyup', function (e) {
         body.style.padding = event.target.value + "px";
+    })
+
+    marginSize.addEventListener('keyup', function (e) {
+        body.style.margin = event.target.value + "px";
     })
 
 </script>
