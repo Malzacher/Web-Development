@@ -14,7 +14,8 @@
 
 <script>
 
-    var names = ["Nick", "Bridget", "James", "Jack", "Leon"]
+    //var names = ["Nick", "Bridget", "James", "Jack", "Leon"]
+    var names = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus velit nec metus iaculis, sed mattis sapien efficitur. Praesent at leo purus. Sed ut risus mi. Pellentesque luctus risus diam, cursus maximus arcu mattis nec. Duis in augue velit. Vivamus accumsan rutrum purus in porttitor. Nam id ipsum velit. Pellentesque viverra nunc nec eleifend varius. Donec vestibulum vel mi at sagittis. Mauris tincidunt cursus ligula, quis laoreet arcu placerat ut. Suspendisse potenti.".split(" ")
 
     function toEmailAddress(name) {
         return name.toLowerCase() + "@gmail.com"
@@ -22,8 +23,14 @@
 
     for (i = 0; i < names.length; i++) {
         names[i] = toEmailAddress(names[i]);
-        console.log(names[i])
+        console.log(i, names[i])
+
+        if (i == 10) {
+            break;
+        }
     }
+
+    console.log(names.length);
 </script>
 
 </html>
