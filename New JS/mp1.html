@@ -20,13 +20,20 @@
 
     <label for="">Text Size:</label>
     <input type="text" class="text-size">
+    <br>
+
+    <label for="">Padding Size:</label>
+    <input type="text" class="padding-size">
 
 </body>
 
 <script>
+    //creating event listeners
+
     var bgColor = document.querySelector(".bg-color");
     var textColor = document.querySelector(".text-color");
     var textSize = document.querySelector(".text-size");
+    var paddingSize = document.querySelector(".padding-size");
 
     var body = document.querySelector("body");
 
@@ -40,6 +47,10 @@
 
     textSize.addEventListener('keyup', function (e) {
         body.style.fontSize = event.target.value + "px"
+    })
+
+    paddingSize.addEventListener('keyup', function (e) {
+        body.style.padding = event.target.value + "px";
     })
 
 </script>
