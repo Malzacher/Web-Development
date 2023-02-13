@@ -18,11 +18,20 @@
     class Person {
         constructor(name, age, food) {
             console.log(name, age, food);
+            this.name = name;
+            this.age = Number(age);
+            this.food = food;
+        }
+        foodLover() {
+            console.log(this.name + " really loves " + this.food);
         }
     }
 
     const nick = new Person("Nick", 22, "Pizza");
+    nick.foodLover()
+
     const james = new Person("James", 18, "Burgers");
+    james.foodLover()
 
 </script>
 
