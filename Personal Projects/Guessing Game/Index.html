@@ -7,19 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game!</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js"></script>
+
+    <style>
+        #clickable-div {
+          width: 200px;
+          height: 200px;
+          background-color: lightblue;
+          text-align: center;
+          line-height: 200px;
+          color: white;
+          cursor: pointer;
+        }
+      </style>
 </head>
 
 <body>
     <div class="score-container">
-        <div class="score-counter">Score: <span id="score-tally"></span></div>
+        <div class="score-counter">Score: <span id="score-tally">0</span></div>
     </div>
 
     <div class="body-container">
         <div class="question-box">Question:<span id="update-question"></span></div>
-        <div class="true-box"></div>
-        <div class="false-box"></div>
-    </div>
-
+        <div id="clickable-div">Click Me!</div>
+        <div id="false-box">false</div>
+    </div>  
 </body>
-
 </html>
