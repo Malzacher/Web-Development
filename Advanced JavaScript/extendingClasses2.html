@@ -25,8 +25,22 @@
         }
     }
 
+    class Cats extends Animal {
+        constructor(species, weight, height) {
+            super(species, weight, height);
+
+            this.color = "Black";
+        }
+        sleep() {
+            console.log(this.species + " sleeps for 12h a day");
+        }
+    }
+
     const lion = new Animal('Lion', 250, 225);
     lion.getData();
+
+    const bridget = new Cats('Bridget', 6, 20);
+    bridget.sleep();
 
 </script>
 
