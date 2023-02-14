@@ -10,27 +10,49 @@
     <script src="assets/script.js"></script>
 
     <style>
-        #clickable-div {
-          width: 200px;
-          height: 200px;
-          background-color: lightblue;
-          text-align: center;
-          line-height: 200px;
-          color: white;
-          cursor: pointer;
-        }
-      </style>
+
+    </style>
 </head>
 
 <body>
+    <div class="header-container">
+        <h1>Guessing Game!</h1>
+    </div>
     <div class="score-container">
         <div class="score-counter">Score: <span id="score-tally">0</span></div>
     </div>
 
     <div class="body-container">
-        <div class="question-box">Question:<span id="update-question"></span></div>
-        <div id="clickable-div">Click Me!</div>
-        <div id="false-box">false</div>
-    </div>  
-</body>
+        <div id="question-box">
+            <p>Question:<span id="update-question"></span></p>
+            <br>
+            <span id="question-response"></span>
+        </div>
+        <div id="true-box">
+            <p>True!</p>
+        </div>
+        <div id="false-box">
+            <p>False!</p>
+        </div>
+    </div>
+
+    <script>
+        const trueBtn = document.getElementById('true-box');
+        const falseBtn = document.getElementById('false-box');
+
+        const response = document.getElementById('question-response');
+
+
+        trueBtn.addEventListener('click', function () {
+            alert('True Clicked');
+            response.innerHTML = 'Testing!';
+        });
+
+        falseBtn.addEventListener('click', function () {
+            alert('False Clicked');
+        });
+
+
+    </script>
+
 </html>
