@@ -34,36 +34,69 @@
         <div id="false-box">
             <p>False!</p>
         </div>
+        <div class="next-question">next</div>
     </div>
 
     <script>
+
+
         const trueBtn = document.getElementById('true-box');
         const falseBtn = document.getElementById('false-box');
-
+        const nextBtn = document.getElementById('next-question');
         const response = document.getElementById('question-response');
 
 
         trueBtn.addEventListener('click', function () {
-            alert('True Clicked');
-            response.innerHTML = 'Testing!';
+            qCheck(true)
         });
 
         falseBtn.addEventListener('click', function () {
-            alert('False Clicked');
+            qCheck(false)
         });
 
-        var currentQuestions = 0;
+        nextBtn.addEventListener('click', function () {
+            nextQuestion();
+        });
+
+        var currentQuestion = 0;
+        var score = 0;
 
         var questions = [{
-            "Question": "The black box in a plane is black",
-            "Answer": false,
-            "Response": "False! They are actually orange"
+            "question": "The black box in a plane is black",
+            "answer": false,
+            "response": "False! They are actually orange"
         }, {
-            "Question": "Alliumphobia is a fear of garlic",
-            "Answer": true,
-            "Response": "True! Alliumphobia is indeed a fear of garlic"
-        }]
+            "question": "Alliumphobia is a fear of garlic",
+            "answer": true,
+            "response": "True! Alliumphobia is indeed a fear of garlic"
+        }];
 
+        (function () {
+            fnReset();
+        })();
+
+        function fnReset() {
+            currentquestion = 0;
+            document.getElementById('riquestiontext').innerHTML = questions[currentquestion].question;
+        }
+
+        function qCheck(answer) {
+            var questionAnswer = questions[currentQuestion].answer
+            if (questions[currentQuestion].answer === answer) {
+                alert("you were correct");
+                score++;
+                response.innerText = questions[currentQuestion].response
+            }
+            else {
+                alert("you were wrong");
+                score = 0;
+                response.innerText = questions[currentQuestion].response
+            }
+        }
+
+        function nextQuestion() {
+
+        }
 
     </script>
 
