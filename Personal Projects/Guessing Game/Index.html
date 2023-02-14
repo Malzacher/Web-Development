@@ -34,29 +34,33 @@
         <div id="false-box">
             <p>False!</p>
         </div>
-        <div class="next-question">next</div>
+        <div id="next-question">next</div>
     </div>
 
     <script>
-
 
         const trueBtn = document.getElementById('true-box');
         const falseBtn = document.getElementById('false-box');
         const nextBtn = document.getElementById('next-question');
         const response = document.getElementById('question-response');
+        const scoreTally = document.getElementById('score-tally');
 
 
         trueBtn.addEventListener('click', function () {
             qCheck(true)
+            console.log("true button")
         });
 
         falseBtn.addEventListener('click', function () {
             qCheck(false)
+            console.log("false button")
         });
 
         nextBtn.addEventListener('click', function () {
-            nextQuestion();
+            nextQuestion()
+            console.log("next button")
         });
+
 
         var currentQuestion = 0;
         var score = 0;
@@ -73,30 +77,47 @@
 
         (function () {
             fnReset();
-        })();
+            console.log("im working")
+          })();
 
         function fnReset() {
             currentquestion = 0;
-            document.getElementById('riquestiontext').innerHTML = questions[currentquestion].question;
+            document.getElementById('update-question').innerHTML = questions[currentquestion].question;
         }
 
         function qCheck(answer) {
-            var questionAnswer = questions[currentQuestion].answer
-            if (questions[currentQuestion].answer === answer) {
-                alert("you were correct");
+            var questionAnswer = questions[currentQuestion].answer;
+            console.log("in the right place")
+            if (questionAnswer === answer) {
+                // show Correct
+                console.log("you were correct");
                 score++;
+                scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
+                setTimeout(nextQuestion, 5000)
             }
             else {
+                // show incorrect and reset current score
                 alert("you were wrong");
                 score = 0;
                 response.innerText = questions[currentQuestion].response
+                setTimeout(nextQuestion, 5000)
             }
         }
 
-        function nextQuestion() {
 
+        function nextQuestion() {
+            console.log("Going to text Question!")
+            response.innerText = ""
+
+            if (currentQuestion < questions.length - 1) {
+                currentquestion++;
+            } else {
+                alert("Sorry no more");
+            }
+            document.getElementById('update-question').innerHTML = questions[currentquestion].question;
         }
+
 
     </script>
 
