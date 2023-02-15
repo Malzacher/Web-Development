@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:wght@400;600;900&family=Roboto:wght@300&display=swap');
+
 body {
     background-color: #131E2A;
     color: #FFFFFF;
-    font-family: 'Arlon', Courier, monospace;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-top: 5rem;
 }
+
+
 
 .score-container {
     position: absolute;
