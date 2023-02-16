@@ -16,25 +16,26 @@
 
 <body>
     <div class="header-container">
-        <h1>True or False</h1>
+        <h1>True or <br>False?</h1>
+
     </div>
-    
+
     <div class="score-container">
-       
+
         <div class="score-counter">Score: <span id="score-tally">0</span></div>
-         <div class="high-score-counter">High Score: <span id="high-score-tally">0</span></div>
+        <div class="high-score-counter">High Score: <span id="high-score-tally">0</span></div>
     </div>
 
     <div class="body-container">
         <div id="question-box">
             <p>Question:<span id="update-question"></span></p>
-            
+
             <div id="question-response"></div>
         </div>
-         <div id="true-box" class="btn">
+        <div id="true-box" class="btn">
             <p>True!</p>
         </div>
-        
+
         <div id="false-box" class="btn">
             <p>False!</p>
         </div>
@@ -48,7 +49,7 @@
         const nextBtn = document.getElementById('next-question');
         const response = document.getElementById('question-response');
         const scoreTally = document.getElementById('score-tally');
- 
+
         trueBtn.addEventListener('click', function () {
             qCheck(true)
             console.log("true button")
@@ -63,18 +64,21 @@
         var score = 0;
 
         var questions = [{
-            "question": " The black box in a plane is black",
+            "question": " Is the black box in a plane is actually black?",
             "answer": false,
             "response": "False! They are actually orange"
         }, {
-            "question": " Alliumphobia is a fear of garlic",
+            "question": " Is Alliumphobia is a fear of garlic?",
             "answer": true,
             "response": "True! Alliumphobia is indeed a fear of garlic"
         }, {
-            "question": " The atomic number for lithium is 17",
+            "question": " is the atomic number for lithium no. 17",
             "answer": false,
             "response": "False! Lithiums atomic number is 3"
-
+        }, {
+            "question": " Does broccoli contain more vitamin C than lemons?",
+            "answer": true,
+            "response": " True! Broccoli contains 89 mg of vitamin C per 100 grams, while lemons contain only 77 mg of vitamin C per 100 grams."
         }];
 
         (function () {
@@ -86,6 +90,8 @@
             currentQuestion = 0;
             document.getElementById('update-question').innerHTML = questions[currentQuestion].question;
         }
+
+
 
         function qCheck(answer) {
             var questionAnswer = questions[currentQuestion].answer;
@@ -100,12 +106,14 @@
             }
             else {
                 // show incorrect and reset current score
+                console.log("you were wrong");
+                highScore();
                 score = 0;
+                scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
                 setTimeout(nextQuestion, 5000)
             }
         }
-
 
         function nextQuestion() {
             console.log("Going to text Question!")
@@ -119,6 +127,15 @@
             }
             document.getElementById('update-question').innerHTML = questions[currentQuestion].question;
 
+        }
+        function highScore() {
+            console.log(score)
+            var highScore = 0;
+            if (score > highScore) {
+                highScore = score;
+                console.log(highScore)
+                document.getElementById('high-score-tally').innerText = highScore;
+            }
         }
 
 
