@@ -17,7 +17,9 @@
 <body>
     <div class="header-container">
         <h1>True or <br>False?</h1>
-
+    </div>
+    <div id="timer">
+        15
     </div>
 
     <div class="score-container">
@@ -49,6 +51,8 @@
         const nextBtn = document.getElementById('next-question');
         const response = document.getElementById('question-response');
         const scoreTally = document.getElementById('score-tally');
+
+        var sec = 15;
 
         trueBtn.addEventListener('click', function () {
             qCheck(true)
@@ -98,27 +102,30 @@
             console.log("in the right place")
             if (questionAnswer === answer) {
                 // show Correct
+                pause();
                 console.log("you were correct");
                 score++;
                 scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
-                setTimeout(nextQuestion, 5000)
+                setTimeout(nextQuestion, 4000)
             }
             else {
                 // show incorrect and reset current score
                 console.log("you were wrong");
+                pause();
                 highScore();
                 score = 0;
                 scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
-                setTimeout(nextQuestion, 5000)
+                setTimeout(nextQuestion, 4000)
             }
         }
 
         function nextQuestion() {
             console.log("Going to text Question!")
-            response.innerText = ""
+            sec = 15;
 
+            response.innerText = ""
             if (currentQuestion < questions.length - 1) {
                 currentQuestion++;
                 console.log(currentQuestion)
@@ -138,6 +145,31 @@
             }
         }
 
+        var timer;
+        var ele = document.getElementById('timer');
+
+
+        function clock() {
+            timer = setInterval(() => {
+                ele.innerHTML = sec;
+                sec -= 1;
+                if (sec === 0) {
+                    nextQuestion();
+                    score = 0;
+                    scoreTally.innerText = score;
+                    sec = 15;
+                }
+            }, 1000);
+        }
+
+        function pause() {
+            clearInterval(timer);
+            sec = 5
+            console.log("??")
+            clock();
+        }
+
+        clock();
 
     </script>
 
