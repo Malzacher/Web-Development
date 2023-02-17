@@ -101,9 +101,9 @@
                 console.log("you were correct");
                 score++;
                 scoreTally.innerText = score;
-                response.innerText = questions[currentQuestion].response
                 fade();
-                setTimeout(nextQuestion, 5000)
+                response.innerText = questions[currentQuestion].response
+                setTimeout(nextQuestion, 6000)
             }
             else {
                 // show incorrect and reset current score
@@ -112,9 +112,9 @@
                 highScore();
                 score = 0;
                 scoreTally.innerText = score;
-                response.innerText = questions[currentQuestion].response
                 fade();
-                setTimeout(nextQuestion, 5000)
+                response.innerText = questions[currentQuestion].response
+                setTimeout(nextQuestion, 6000)
             }
         }
 
@@ -154,7 +154,7 @@
                     qCheck(null);
                     score = 0;
                     scoreTally.innerText = score;
-                    sec = 15;
+                    sec = 5;
                 }
             }, 1000);
         }

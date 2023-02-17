@@ -45,7 +45,7 @@ body {
     height: 60%;
     width: 100%;
     align-items: center;
-    background-color:#222B39;
+    background-color: #222B39;
     border-radius: 20px;
     flex-wrap: wrap;
 }
@@ -63,11 +63,21 @@ body {
 }
 
 #true-box {
-    background: linear-gradient(45deg, #36DE90, #178D58);
+    background: linear-gradient(90deg, #36DE90, transparent) #188E56;
+    transition: background-color 1s;
+}
+
+#true-box:hover {
+    background-color: #bc4dd2;
 }
 
 #false-box {
-    background: linear-gradient(45deg, #F57860, #D73010);
+    background: linear-gradient(270deg, #F57860, transparent) #D73010;
+    transition: background-color 1s;
+}
+
+#false-box:hover {
+    background-color: #bc4dd2;
 }
 
 #true-box,
@@ -93,12 +103,12 @@ body {
 }
 
 #timer {
-    position:relative;
+    position: relative;
     top: -25px;
-    margin:0 auto;
-    clear:left;
+    margin: 0 auto;
+    clear: left;
     z-index: 0;
-    text-align:center;
+    text-align: center;
     background-color: #1D2635;
     width: 50px;
     height: 50px;
