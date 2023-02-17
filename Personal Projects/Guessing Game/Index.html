@@ -92,8 +92,12 @@
             document.getElementById('update-question').innerHTML = questions[currentQuestion].question;
         }
 
+        var questionColour = document.getElementById('question-box');
+        
+
         function qCheck(answer) {
             var questionAnswer = questions[currentQuestion].answer;
+            
             console.log("in the right place")
             if (questionAnswer === answer) {
                 // show Correct
@@ -103,6 +107,8 @@
                 fade();
                 response.innerText = questions[currentQuestion].response
                 setTimeout(nextQuestion, 6000)
+                questionColour.style.background = "linear-gradient(90deg, #36DE90, transparent) #188E56";
+                
             }
             else {
                 // show incorrect and reset current score
@@ -121,8 +127,9 @@
             sec = 15;
 
             //toggling the fade class prior to changing the text
-            
+
             textUpdate.classList.toggle("fade")
+            questionColour.style.background = "#222B39";
 
             response.innerText = ""
             if (currentQuestion < questions.length - 1) {
