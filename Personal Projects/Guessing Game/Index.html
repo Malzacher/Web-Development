@@ -28,7 +28,6 @@
     <div class="body-container">
         <div id="question-box">
             <p>Question:<span id="update-question"></span></p>
-
             <div id="question-response"></div>
         </div>
         <div id="true-box" class="btn">
@@ -93,11 +92,10 @@
         }
 
         var questionColour = document.getElementById('question-box');
-        
 
         function qCheck(answer) {
             var questionAnswer = questions[currentQuestion].answer;
-            
+
             console.log("in the right place")
             if (questionAnswer === answer) {
                 // show Correct
@@ -108,7 +106,7 @@
                 response.innerText = questions[currentQuestion].response
                 setTimeout(nextQuestion, 6000)
                 questionColour.style.background = "linear-gradient(90deg, #36DE90, transparent) #188E56";
-                
+
             }
             else {
                 // show incorrect and reset current score
@@ -159,7 +157,7 @@
             timer = setInterval(() => {
                 ele.innerHTML = sec;
                 sec -= 1;
-                if (sec >= 10 ){
+                if (sec >= 10) {
                     ele.style.color = "white";
                 }
                 if (sec <= 4) {
