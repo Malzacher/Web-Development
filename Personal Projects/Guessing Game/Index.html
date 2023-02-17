@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game!</title>
     <link rel="stylesheet" href="assets/style.css">
-    <script src="../Guessing Game/assets/script.js"></script>
+    <script src="../Guessing Game/assets/script.js" type="javascript"></script>
 
 </head>
 
@@ -97,7 +97,6 @@
             console.log("in the right place")
             if (questionAnswer === answer) {
                 // show Correct
-                pause();
                 console.log("you were correct");
                 score++;
                 scoreTally.innerText = score;
@@ -108,7 +107,6 @@
             else {
                 // show incorrect and reset current score
                 console.log("you were wrong");
-                pause();
                 highScore();
                 score = 0;
                 scoreTally.innerText = score;
@@ -121,6 +119,10 @@
         function nextQuestion() {
             console.log("Going to text Question!")
             sec = 15;
+
+            //toggling the fade class prior to changing the text
+            
+            textUpdate.classList.toggle("fade")
 
             response.innerText = ""
             if (currentQuestion < questions.length - 1) {
@@ -150,6 +152,12 @@
             timer = setInterval(() => {
                 ele.innerHTML = sec;
                 sec -= 1;
+                if (sec >= 10 ){
+                    ele.style.color = "white";
+                }
+                if (sec <= 4) {
+                    ele.style.color = "#D73010";
+                }
                 if (sec === -1) {
                     qCheck(null);
                     score = 0;
@@ -159,21 +167,13 @@
             }, 1000);
         }
 
-        function pause() {
-            clearInterval(timer);
-            sec = 5
-            console.log("??")
-            clock();
-        }
-
         clock();
 
         let textUpdate = document.getElementById('question-response');
-        
-        function fade(){
+
+        function fade() {
             textUpdate.classList.toggle("fade")
             console.log("Fading")
-
         }
 
     </script>
