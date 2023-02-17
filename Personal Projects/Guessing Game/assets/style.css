@@ -53,6 +53,13 @@ body {
 #question-response {
     flex-basis: 100%;
     width: 100%;
+    opacity: 0;
+    -webkit-transform: opacity 0.3s ease-in-out;
+    -moz-transform: opacity 0.3s ease-in-out;
+    -o-transform: opacity 0.3s ease-in-out;
+    -ms-transform: opacity 0.3s ease-in-out;
+    transform: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 #true-box {
@@ -87,9 +94,21 @@ body {
 
 #timer {
     position:relative;
+    top: -25px;
     margin:0 auto;
     clear:left;
-    height:auto;
     z-index: 0;
     text-align:center;
+    background-color: #1D2635;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#timer-center {
+    line-height: 3;
+}
+
+#question-response.fade {
+    opacity: 1;
 }

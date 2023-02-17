@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game!</title>
     <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
+    <script src="../Guessing Game/assets/script.js"></script>
 
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -19,7 +16,7 @@
         <h1>True or <br>False?</h1>
     </div>
     <div id="timer">
-        15
+        <p id="timer-center">15</p>
     </div>
 
     <div class="score-container">
@@ -105,7 +102,8 @@
                 score++;
                 scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
-                setTimeout(nextQuestion, 4000)
+                fade();
+                setTimeout(nextQuestion, 5000)
             }
             else {
                 // show incorrect and reset current score
@@ -115,7 +113,8 @@
                 score = 0;
                 scoreTally.innerText = score;
                 response.innerText = questions[currentQuestion].response
-                setTimeout(nextQuestion, 4000)
+                fade();
+                setTimeout(nextQuestion, 5000)
             }
         }
 
@@ -144,15 +143,15 @@
         }
 
         var timer;
-        var ele = document.getElementById('timer');
+        var ele = document.getElementById('timer-center');
 
 
         function clock() {
             timer = setInterval(() => {
                 ele.innerHTML = sec;
                 sec -= 1;
-                if (sec === 0) {
-                    nextQuestion();
+                if (sec === -1) {
+                    qCheck(null);
                     score = 0;
                     scoreTally.innerText = score;
                     sec = 15;
@@ -168,6 +167,14 @@
         }
 
         clock();
+
+        let textUpdate = document.getElementById('question-response');
+        
+        function fade(){
+            textUpdate.classList.toggle("fade")
+            console.log("Fading")
+
+        }
 
     </script>
 
