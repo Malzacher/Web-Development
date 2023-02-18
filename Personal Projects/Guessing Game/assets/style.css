@@ -48,6 +48,7 @@ body {
     background-color: #222B39;
     border-radius: 20px;
     flex-wrap: wrap;
+    opacity: .8;
 }
 
 #question-response {
