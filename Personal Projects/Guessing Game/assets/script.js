@@ -36,6 +36,40 @@ var questions = [{
     "question": " Does broccoli contain more vitamin C than lemons?",
     "answer": true,
     "response": " True! Broccoli contains 89 mg of vitamin C per 100 grams, while lemons contain only 77 mg of vitamin C per 100 grams."
+}, {
+    "question": " Being scared of clouds is called Coulrophobia?",
+    "answer": false,
+    "response": "False! Coulrophobia is the fear of being the scared of clowns"
+}, {
+    "question": " Did Einstein fail his math class in university?",
+    "answer": false,
+    "response": "False! Einstein actually failed his physics class in university"
+}, {
+    "question": " It takes nine months for an elephant to be born?",
+    "answer": false,
+    "response": "False! Elephant babies are born after 22 months"
+}, {
+    "question": " In California, USA, you cannot wear cowboy boots unless you own at least two cows",
+    "answer": true,
+    "response": "True, you cannot wear cowboy boots unless you own at least two cows"
+}, {
+    "question": " Humans share 95 percent of their DNA with bananas",
+    "answer": false,
+    "response": "False, humans share 60 percent of their DNA with bananas"
+}, {
+    "question": " Is a coconut is a nut?",
+    "answer": false,
+    "response": "False! It’s actually a one-seeded drupe like peaches"
+
+}, {
+    "question": " Coca Cola exists in every country around the world",
+    "answer": false,
+    "response": " False! Coca Cola does not exist in Cuba and North Korea"
+
+}, {
+    "question": " Spider silk was once used to make guitar strings",
+    "answer": false,
+    "response": "False! Spider silk was used to make violin strings"
 }];
 
 (function () {
@@ -61,7 +95,8 @@ function qCheck(answer) {
         scoreTally.innerText = score;
         fade();
         response.innerText = questions[currentQuestion].response
-        setTimeout(nextQuestion, 6000)
+        setTimeout(nextQuestion, 5000)
+        sec = 5
         questionColour.style.background = "linear-gradient(90deg, #36DE90, transparent) #188E56";
 
     }
@@ -72,8 +107,9 @@ function qCheck(answer) {
         score = 0;
         scoreTally.innerText = score;
         fade();
+        sec = 5
         response.innerText = questions[currentQuestion].response
-        setTimeout(nextQuestion, 6000)
+        setTimeout(nextQuestion, 5000)
     }
 }
 
