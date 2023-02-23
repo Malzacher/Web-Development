@@ -2,6 +2,8 @@
 
 body {
     background-image: url('bg.jpg');
+
+    background-size: cover;
     background-position: center;
     background-color: #131E2A;
     color: #FFFFFF;
@@ -127,4 +129,36 @@ body {
 
 #question-response.fade {
     opacity: 1;
+}
+
+@media (max-width: 450px) {
+
+    .header-container {
+        left: 5px;
+        font-size: 10px;
+        top: 25px;
+    }
+
+    .score-container {
+        right: 0;
+    }
+
+    .body-container {
+        padding: 10px;
+    }
+
+    #true-box {
+        margin-right: 0;
+    }
+
+    #false-box {
+        margin-left: 0;
+    }
+
+    #true-box,
+    #false-box {
+        flex: 0 0 47%;
+    }
+
+
 }
