@@ -8,11 +8,15 @@ var sec = 15;
 
 trueBtn.addEventListener('click', function () {
     qCheck(true)
+    trueBtn.disabled = true;
+    falseBtn.disabled = true;
     console.log("true button")
 });
 
 falseBtn.addEventListener('click', function () {
     qCheck(false)
+    trueBtn.disabled = true;
+    falseBtn.disabled = true;
     console.log("false button")
 });
 
@@ -132,6 +136,8 @@ function qCheck(answer) {
 
 function nextQuestion() {
     console.log("Going to text Question!")
+    trueBtn.disabled = false;
+    falseBtn.disabled = false;
     sec = 15;
 
     //toggling the fade class prior to changing the text
