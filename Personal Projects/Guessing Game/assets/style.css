@@ -30,7 +30,7 @@ body {
 .body-container {
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
     flex-wrap: wrap;
     align-self: center;
     gap: 1rem;
@@ -42,7 +42,7 @@ body {
 #question-box {
     display: flex;
     flex-basis: 100%;
-    height: 60%;
+    height: 70%;
     width: 100%;
     align-items: center;
     background-color: #222B39;
@@ -69,6 +69,7 @@ body {
 #true-box {
     background: linear-gradient(90deg, #36DE90, transparent) #188E56;
     transition: background-color 1s;
+    margin-right: 1rem;
 }
 
 #true-box:hover {
@@ -78,6 +79,7 @@ body {
 #false-box {
     background: linear-gradient(270deg, #F57860, transparent) #D73010;
     transition: background-color 1s;
+    margin-left: 1rem;
 }
 
 #false-box:hover {
@@ -87,8 +89,8 @@ body {
 #true-box,
 #false-box {
     display: flex;
-    flex: 0 0 calc(50% - 1rem);
-    height: 40%;
+    flex: 0 0 calc(50% - 1.5rem);
+    height: 30%;
     align-items: center;
     border-radius: 20px;
     font-size: 1.5rem;

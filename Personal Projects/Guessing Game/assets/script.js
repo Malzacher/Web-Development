@@ -1,4 +1,3 @@
-
 const trueBtn = document.getElementById('true-box');
 const falseBtn = document.getElementById('false-box');
 const nextBtn = document.getElementById('next-question');
@@ -60,16 +59,34 @@ var questions = [{
     "question": " Is a coconut is a nut?",
     "answer": false,
     "response": "False! It’s actually a one-seeded drupe like peaches"
-
 }, {
     "question": " Coca Cola exists in every country around the world",
     "answer": false,
     "response": " False! Coca Cola does not exist in Cuba and North Korea"
-
 }, {
-    "question": " Spider silk was once used to make guitar strings",
+    "question": " Rapper Nicki Minaj is over 180 cm (5 ft, 10.9 in) in height",
     "answer": false,
-    "response": "False! Spider silk was used to make violin strings"
+    "response": "False. Nicki Minaj is ‘only’ 157 cm (5 ft, 1.8 in) tall. Hard to tell with all those high heels, right?"
+}, {
+    "question": " The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war",
+    "answer": true,
+    "response": "True! The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war"
+}, {
+    "question": " The liver is the largest organ in the human body",
+    "answer": false,
+    "response": "False. The human body’s largest organ is the skin. It weighs 3.6 kg (8 lbs.)"
+}, {
+    "question": " The world’s earliest surviving motion-picture film dates back to 1888",
+    "answer": true,
+    "response": "True! The world’s earliest surviving motion-picture film dates back to 1888"
+}, {
+    "question": " After you drink alcohol, it takes your brain 6 minutes to start reacting to it",
+    "answer": true,
+    "response": "True! After you drink alcohol, it takes your brain 6 minutes to start reacting to it"
+}, {
+    "question": " Singer Billie Eilish’s full name is Billie Eilish Pirate Baird O’Connell",
+    "answer": true,
+    "response": "True! Singer Billie Eilish’s full name is Billie Eilish Pirate Baird O’Connell"
 }];
 
 (function () {
@@ -97,10 +114,9 @@ function qCheck(answer) {
         response.innerText = questions[currentQuestion].response
         setTimeout(nextQuestion, 5000)
         sec = 5
-        questionColour.style.background = "linear-gradient(90deg, #36DE90, transparent) #188E56";
+        questionColour.style.background = "linear-gradient(270deg, #36DE90, transparent) #188E56";
 
-    }
-    else {
+    } else {
         // show incorrect and reset current score
         console.log("you were wrong");
         highScore();
@@ -110,6 +126,7 @@ function qCheck(answer) {
         sec = 5
         response.innerText = questions[currentQuestion].response
         setTimeout(nextQuestion, 5000)
+        questionColour.style.background = "linear-gradient(270deg, #F57860, transparent) #D73010";
     }
 }
 
@@ -132,6 +149,7 @@ function nextQuestion() {
     document.getElementById('update-question').innerHTML = questions[currentQuestion].question;
 
 }
+
 function highScore() {
     console.log(score)
     var highScore = 0;
@@ -149,7 +167,7 @@ var ele = document.getElementById('timer-center');
 function clock() {
     timer = setInterval(() => {
         ele.innerHTML = sec;
-        sec -= 1;
+        sec--;
         if (sec >= 10) {
             ele.style.color = "white";
         }
