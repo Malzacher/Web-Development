@@ -22,75 +22,76 @@ falseBtn.addEventListener('click', function () {
 
 var currentQuestion = 0;
 var score = 0;
+var responseAnswer = "";
 
 var questions = [{
     "question": " Is the black box in a plane is actually black?",
     "answer": false,
-    "response": "False! They are actually orange"
+    "response": "They are actually orange"
 }, {
     "question": " Is Alliumphobia is a fear of garlic?",
     "answer": true,
-    "response": "True! Alliumphobia is indeed a fear of garlic"
+    "response": "Alliumphobia is indeed a fear of garlic"
 }, {
     "question": " is the atomic number for lithium no. 17",
     "answer": false,
-    "response": "False! Lithiums atomic number is 3"
+    "response": "Lithiums atomic number is 3"
 }, {
     "question": " Does broccoli contain more vitamin C than lemons?",
     "answer": true,
-    "response": " True! Broccoli contains 89 mg of vitamin C per 100 grams, while lemons contain only 77 mg of vitamin C per 100 grams."
+    "response": "Broccoli contains 89 mg of vitamin C per 100 grams, while lemons contain only 77 mg of vitamin C per 100 grams."
 }, {
     "question": " Being scared of clouds is called Coulrophobia?",
     "answer": false,
-    "response": "False! Coulrophobia is the fear of being the scared of clowns"
+    "response": "Coulrophobia is the fear of being the scared of clowns"
 }, {
     "question": " Did Einstein fail his math class in university?",
     "answer": false,
-    "response": "False! Einstein actually failed his physics class in university"
+    "response": "Einstein actually failed his physics class in university"
 }, {
     "question": " It takes nine months for an elephant to be born?",
     "answer": false,
-    "response": "False! Elephant babies are born after 22 months"
+    "response": "Elephant babies are born after 22 months"
 }, {
     "question": " In California, USA, you cannot wear cowboy boots unless you own at least two cows",
     "answer": true,
-    "response": "True, you cannot wear cowboy boots unless you own at least two cows"
+    "response": "you cannot wear cowboy boots unless you own at least two cows"
 }, {
     "question": " Humans share 95 percent of their DNA with bananas",
     "answer": false,
-    "response": "False, humans share 60 percent of their DNA with bananas"
+    "response": "humans share 60 percent of their DNA with bananas"
 }, {
     "question": " Is a coconut is a nut?",
     "answer": false,
-    "response": "False! It’s actually a one-seeded drupe like peaches"
+    "response": "It’s actually a one-seeded drupe like peaches"
 }, {
     "question": " Coca Cola exists in every country around the world",
     "answer": false,
-    "response": " False! Coca Cola does not exist in Cuba and North Korea"
+    "response": "Coca Cola does not exist in Cuba and North Korea"
 }, {
     "question": " Rapper Nicki Minaj is over 180 cm (5 ft, 10.9 in) in height",
     "answer": false,
-    "response": "False. Nicki Minaj is ‘only’ 157 cm (5 ft, 1.8 in) tall. Hard to tell with all those high heels, right?"
+    "response": "Nicki Minaj is ‘only’ 157 cm (5 ft, 1.8 in) tall. Hard to tell with all those high heels, right?"
 }, {
     "question": " The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war",
     "answer": true,
-    "response": "True! The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war"
+    "response": "The Trojan horse was used by the Greeks to mask their way into the city of Troy and win the war"
 }, {
     "question": " The liver is the largest organ in the human body",
     "answer": false,
-    "response": "False. The human body’s largest organ is the skin. It weighs 3.6 kg (8 lbs.)"
+    "response": "The human body’s largest organ is the skin. It weighs 3.6 kg (8 lbs.)"
 }, {
     "question": " The world’s earliest surviving motion-picture film dates back to 1888",
     "answer": true,
-    "response": "True! The world’s earliest surviving motion-picture film dates back to 1888"
+    "response": "The world’s earliest surviving motion-picture film dates back to 1888"
 }, {
     "question": " After you drink alcohol, it takes your brain 6 minutes to start reacting to it",
     "answer": true,
-    "response": "True! After you drink alcohol, it takes your brain 6 minutes to start reacting to it"
+    "response": "After you drink alcohol, it takes your brain 6 minutes to start reacting to it"
 }, {
     "question": " Singer Billie Eilish’s full name is Billie Eilish Pirate Baird O’Connell",
     "answer": true,
-    "response": "True! Singer Billie Eilish’s full name is Billie Eilish Pirate Baird O’Connell"
+    "response": "Singer Billie Eilish’s full name is Billie Eilish Pirate Baird O’Connell"
 }];
 
 (function () {
@@ -115,7 +116,8 @@ function qCheck(answer) {
         score++;
         scoreTally.innerText = score;
         fade();
-        response.innerText = questions[currentQuestion].response
+        responseAnswer = "Correct! ";
+        response.innerText = responseAnswer + questions[currentQuestion].response
         setTimeout(nextQuestion, 5000)
         sec = 5
         questionColour.style.background = "linear-gradient(270deg, #36DE90, transparent) #188E56";
@@ -128,7 +130,8 @@ function qCheck(answer) {
         scoreTally.innerText = score;
         fade();
         sec = 5
-        response.innerText = questions[currentQuestion].response
+        responseAnswer = "Incorrect! ";
+        response.innerText = responseAnswer + questions[currentQuestion].response
         setTimeout(nextQuestion, 5000)
         questionColour.style.background = "linear-gradient(270deg, #F57860, transparent) #D73010";
     }
