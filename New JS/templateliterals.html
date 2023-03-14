@@ -12,8 +12,14 @@
 
         var name = "John";
         var age = 25;
+        time = "";
 
         console.log(`My name is ${name} and I am ${age} years old.`);
+
+        setInterval(function(){
+            console.log(`im runnning ${time}`);
+            time ++;
+        }, 1000)
 
     </script>
     
